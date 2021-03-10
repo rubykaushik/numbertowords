@@ -41,12 +41,12 @@ var tenwords = [10]string{
 	"ninety",
 }
 
-// maxNumber denotes the maximum number allowed for Numbertowords function
-const maxNumber = 99999
+// MaxNumber denotes the maximum number allowed for Numbertowords function
+const MaxNumber = 99999
 
 // Convert converts given number to string
 func Convert(number int) (string, error) {
-	if number < 0 || number > maxNumber {
+	if number < 0 || number > MaxNumber {
 		return "", errors.New("number not in valid range")
 	}
 
